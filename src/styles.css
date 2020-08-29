@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.min-h-8 {
+    height: 8vh;
+}
+
+.font-pop {
+    font-family: 'Poppins';
+}
+
+.line1, .line2, .line3 {
+    @apply m-1 w-4 h-1 bg-white;
+}
+
+.navtext {
+    @apply text-white mx-3 tracking-wider font-medium text-sm;
+}
+
+.bg-pink {
+    background-color: #DA467D;
+}
+
+.nav-active {
+    @apply transform translate-x-0;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.Closebtn .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.Closebtn .line2 {
+    opacity: 0;
+}
+
+.Closebtn .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

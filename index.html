@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Reference: https://www.youtube.com/watch?v=gXkqy0b4M5g&t=608s -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" type="text/css" href="src/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden">
+    <nav class="w-full flex justify-between items-center font-pop h-28 bg-pink">
+        <div class="text-white uppercase tracking-widest text-3xl ml-6">
+            <h4> Visibility </h4>
+        </div>
+        <ul class="nav-links bg-pink absolute flex px-8 inset-y-0 right-0 flex-col items-center justify-around transform translate-x-full transition duration-500 ease-in-out
+            sm:flex-row sm:relative sm:transform sm:translate-x-0">
+            <li><a href="#" class="navtext">Home</a></li>
+            <li><a href="#" class="navtext">About</a></li>
+            <li><a href="#" class="navtext">Work</a></li>
+            <li><a href="#" class="navtext">Projects</a></li>
+        </ul>
+        <div class="sm:hidden relative cursor-pointer burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+    <!-- <div class="transform scale-50">Scaled down</div>
+    <div>
+      <div class="inline-block transform rotate-45">Rotated</div>
+    </div>
+    <div class="transform translate-x-1/2">Translated</div> -->
+    <script src="src/app.js"></script>
+</body>
+
+</html>
